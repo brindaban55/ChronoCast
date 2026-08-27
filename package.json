@@ -1,0 +1,25 @@
+{
+  "name": "stellar-predict",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "Decentralized Prediction Market & Binary Oracle Settlement on Stellar & Soroban",
+  "scripts": {
+    "dev": "npm run dev --prefix frontend",
+    "build": "npm run build --prefix frontend",
+    "deploy:testnet": "node scripts/deploy_live_testnet.js",
+    "interact:testnet": "node scripts/interact_live_testnet.js"
+  },
+  "keywords": [
+    "stellar",
+    "soroban",
+    "prediction-market",
+    "oracle",
+    "smart-contracts",
+    "rust"
+  ],
+  "author": "bishalnium",
+  "license": "MIT",
+  "dependencies": {
+    "@stellar/stellar-sdk": "^16.2.0"
+  }
+}
