@@ -41,11 +41,11 @@ export default function Header({ activeTab, setActiveTab }) {
           </div>
           <div>
             <div style={{ display: 'flex', alignItems: 'center' }}>
-              <span className="brand-title">Stellar<span style={{ color: '#a855f7' }}>Predict</span></span>
+              <span className="brand-title">Chrono<span style={{ color: '#a855f7' }}>Cast</span></span>
               <span className="brand-pill">Testnet v22</span>
             </div>
             <div style={{ fontSize: '0.72rem', color: '#78716c', fontWeight: '700' }}>
-              Decentralized Prediction & Binary Oracle Markets
+              Decentralized Prediction & Binary Oracle Protocol
             </div>
           </div>
         </div>

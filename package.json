@@ -1,8 +1,8 @@
 {
-  "name": "stellar-predict",
+  "name": "chronocast-protocol",
   "version": "1.0.0",
   "type": "module",
-  "description": "Decentralized Prediction Market & Binary Oracle Settlement on Stellar & Soroban",
+  "description": "ChronoCast — Decentralized Prediction Market & Binary Oracle Settlement Protocol on Stellar Testnet",
   "scripts": {
     "dev": "npm run dev --prefix frontend",
     "build": "npm run build --prefix frontend",
@@ -17,7 +17,7 @@
     "smart-contracts",
     "rust"
   ],
-  "author": "bishalnium",
+  "author": "brindaban55",
   "license": "MIT",
   "dependencies": {
     "@stellar/stellar-sdk": "^16.2.0"

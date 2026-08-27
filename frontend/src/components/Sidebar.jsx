@@ -31,10 +31,10 @@ export default function Sidebar({ activeTab, setActiveTab }) {
           </div>
           <div>
             <div className="brand-name">
-              Stellar<span style={{ color: 'var(--accent-indigo)' }}>Predict</span>
+              Chrono<span style={{ color: 'var(--accent-indigo)' }}>Cast</span>
             </div>
             <div className="brand-subtitle">
-              Neumorphic Oracle Protocol
+              Decentralized Oracle Protocol
             </div>
           </div>
         </div>

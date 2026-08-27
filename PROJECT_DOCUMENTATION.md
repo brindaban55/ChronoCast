@@ -1,8 +1,8 @@
-# 🔮 StellarPredict — Comprehensive Project Documentation
+# 🔮 ChronoCast — Comprehensive Project Documentation
 
 ## 1. Executive Summary
 
-**StellarPredict** is a decentralized, non-custodial binary prediction and oracle protocol deployed on **Stellar Testnet (Protocol 22 / Soroban v22)**. It provides a trustless on-chain environment for creating real-world prediction markets, staking **YES** or **NO** prediction shares in automated odds pools, and receiving proportional pool payouts upon verified oracle resolution.
+**ChronoCast** is a decentralized, non-custodial binary prediction and oracle protocol deployed on **Stellar Testnet (Protocol 22 / Soroban v22)**. It provides a trustless on-chain environment for creating real-world prediction markets, staking **YES** or **NO** prediction shares in automated odds pools, and receiving proportional pool payouts upon verified oracle resolution.
 
 The application features a modern **Neumorphic (Soft UI)** design system with a persistent **Left-Sidebar Navigation Dock**, live probability calculation meters, interactive stake payout simulator, native XLM payments, multi-wallet authentication, and real-time Soroban RPC event polling.
 
@@ -61,68 +61,30 @@ The application features a modern **Neumorphic (Soft UI)** design system with a 
 
 ---
 
-## 5. Automated Rust Unit Tests (4/4 Passing)
+## 5. Frontend Architecture & Zero-Mock Compliance
 
-The contract suite was tested via `cargo test` in `contracts/prediction_vault`:
+All state queries are directly linked to live endpoints:
+- **Zero Placeholder Data:** If the smart contract has no markets, authentic empty states are rendered with deep links to Stellar.Expert.
+- **Dynamic Odds Pool Calculation:** Live probabilities computed as `YES_odds = YES_pool / (YES_pool + NO_pool) * 100%`.
+- **3-Tier Wallet Recovery:** Distinct error handlers for missing extension, rejected signatures, and insufficient gas.
+- **On-Chain Leaderboard:** Real-time map-reduce aggregation over Soroban RPC market storage.
 
-```rust
+---
+
+## 6. Verification & Automated Testing
+
+Automated Rust unit tests verify the protocol under standard and edge cases:
+- `test_create_and_fetch_market`: Verifies on-chain market initialization and persistence.
+- `test_stake_prediction_and_volume`: Verifies liquidity pool balance increments and staker counts.
+- `test_resolve_market_and_stats`: Verifies oracle resolution states and protocol volume tracking.
+- `test_nonexistent_market_panic`: Ensures boundary validation on invalid market IDs.
+
+```text
 running 4 tests
 test test::test_nonexistent_market_panic - should panic ... ok
 test test::test_create_and_fetch_market ... ok
 test test::test_stake_prediction_and_volume ... ok
 test test::test_resolve_market_and_stats ... ok
 
-test result: ok. 4 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.03s
-```
-
----
-
-## 6. Frontend Layout & Interactive Modules
-
-1. **Left Neumorphic Sidebar:**
-   - Soft embossed brand logo (`🔮 StellarPredict`).
-   - Sticky navigation menu (`Market Arena`, `Create Market`, `Fast XLM Pay`, `Oracle Desk`, `Soroban Feed`).
-   - Protocol 22 status node and quick contract link.
-
-2. **Top Control Bar:**
-   - Real-time search filter input.
-   - 1-Click Friendbot Faucet (+10,000 XLM) button.
-   - XLM balance and G-address copy pill.
-   - **Dedicated Standalone Red/Rose Neumorphic Disconnect Button**.
-
-3. **Market Arena:**
-   - Filterable categories (`All`, `Crypto`, `Tech`, `Governance`, `DeFi`).
-   - Dual-gradient probability meter (`YES %` vs `NO %`).
-   - Instant YES & NO staking buttons with variable chip presets (`10`, `25`, `50`, `100` XLM).
-   - Variable micro-tipping (`5`, `10`, `25`, `50` XLM) with celebratory confetti.
-   - Reddit-style inline discussion accordion.
-
-4. **Interactive Odds & Profit Simulator:**
-   - Real-time calculator showing estimated payout and net profit before staking.
-
-5. **Oracle Resolution Desk:**
-   - Standalone portal for creators to review and settle expired predictions.
-
-6. **Fast XLM Transfer Terminal:**
-   - Native Stellar payments with memo validation and fee verification.
-
----
-
-## 7. Setup & Local Execution Guide
-
-```bash
-# 1. Clone repository
-git clone <repository_url>
-cd stellar_predict
-
-# 2. Install dependencies
-npm install --legacy-peer-deps
-cd frontend
-npm install --legacy-peer-deps
-
-# 3. Start local development server
-npm run dev
-
-# 4. Open in browser
-http://localhost:5176/
+test result: ok. 4 passed; 0 failed; 0 ignored; finished in 0.03s
 ```

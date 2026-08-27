@@ -41,7 +41,7 @@ async function fundAccount(publicKey) {
 
 async function main() {
   console.log('================================================================');
-  console.log('⚡ STELLARPREDICT — TESTNET SOROBAN CONTRACT DEPLOYER');
+  console.log('⚡ CHRONOCAST — TESTNET SOROBAN CONTRACT DEPLOYER');
   console.log('   Target: Stellar Testnet (Protocol 22 / Soroban v22)');
   console.log('================================================================\n');
 

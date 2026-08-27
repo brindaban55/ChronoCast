@@ -1,8 +1,8 @@
-# 🔮 StellarPredict — Deployment & Smart Contract Submission Details
+# 🔮 ChronoCast — Deployment & Smart Contract Submission Details
 
 ## 📋 Smart Contract Details
 
-- **Project Name:** StellarPredict — Decentralized Binary Prediction & Oracle Protocol
+- **Project Name:** ChronoCast — Decentralized Prediction & Binary Oracle Protocol
 - **Network:** Stellar Testnet (Protocol 22 / Soroban v22)
 - **Contract Name:** `PredictionVaultContract`
 - **Smart Contract Language:** Rust (`soroban-sdk v22.0.11`)
@@ -18,6 +18,8 @@
 - **Deployer Account Address (G-Key):** `GBG3UISDEQU5OCRREYVL7I2B3AVORLWU4DESSLK2O35FZOQWDMEPVYBT`
 - **Verified On-Chain Market #1 Creation Transaction Hash:** `59fe4e4a17fe151876fe6203b4aaa6089d2833045a01529677b5fe6b4ab25909`
 - **Market #1 Explorer Link:** https://stellar.expert/explorer/testnet/tx/59fe4e4a17fe151876fe6203b4aaa6089d2833045a01529677b5fe6b4ab25909
+- **Verified On-Chain Market #2 Creation Transaction Hash:** `ae2502b2eb3fef65126e3d26f2e9eb56a591fd7c6c43d851df7c5ba9234984d8`
+- **Market #2 Explorer Link:** https://stellar.expert/explorer/testnet/tx/ae2502b2eb3fef65126e3d26f2e9eb56a591fd7c6c43d851df7c5ba9234984d8
 
 ## 🧪 Unit Test Verification
 
@@ -32,4 +34,4 @@
 - **Stellar Horizon URL:** `https://horizon-testnet.stellar.org`
 - **Soroban RPC URL:** `https://soroban-testnet.stellar.org`
 - **Network Passphrase:** `Test SDF Network ; September 2015`
-- **Frontend Development Server:** `http://localhost:5176/`
+- **Frontend Development Server:** `http://localhost:5177/`

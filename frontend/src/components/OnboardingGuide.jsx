@@ -8,9 +8,9 @@ const STEPS = [
   {
     id: 1,
     icon: <Rocket size={32} color="#00e5ff" />,
-    title: 'Welcome to StellarPredict',
+    title: 'Welcome to ChronoCast',
     description:
-      'StellarPredict is a decentralized binary outcome prediction market protocol built on Stellar Testnet using Soroban WASM smart contracts. Stake XLM on real-world outcomes with trustless on-chain payout distribution.',
+      'ChronoCast is a decentralized binary outcome prediction market protocol built on Stellar Testnet using Soroban WASM smart contracts. Stake XLM on real-world outcomes with trustless on-chain payout distribution.',
     tip: '🌐 Protocol 22 Soroban WASM contract execution with sub-cent fees',
   },
   {

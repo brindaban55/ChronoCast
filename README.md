@@ -1,10 +1,10 @@
-# 🔮 StellarPredict — Neumorphic Prediction & Binary Oracle Market Protocol
+# 🔮 ChronoCast — Neumorphic Prediction & Binary Oracle Market Protocol
 
 [![Stellar Testnet](https://img.shields.io/badge/Network-Stellar_Testnet-7c4dff?style=for-the-badge&logo=stellar)](https://stellar.expert/explorer/testnet)
 [![Soroban v22](https://img.shields.io/badge/Smart_Contracts-Soroban_v22-10b981?style=for-the-badge)](https://soroban.stellar.org)
 [![License: MIT](https://img.shields.io/badge/License-MIT-ffd600?style=for-the-badge)](LICENSE)
 
-> **StellarPredict** is a decentralized binary prediction and oracle market protocol built on **Stellar Testnet** using **Soroban Protocol 22 smart contracts**. It features a tactile **Neumorphic (Soft UI)** interface, left-sidebar navigation, on-chain automated probability odds, oracle settlement desk, zero-mock on-chain leaderboards, and real-time transaction lifecycle tracking.
+> **ChronoCast** is a decentralized binary prediction and oracle market protocol built on **Stellar Testnet** using **Soroban Protocol 22 smart contracts**. It features a tactile **Neumorphic (Soft UI)** interface, left-sidebar navigation, on-chain automated probability odds, oracle settlement desk, zero-mock on-chain leaderboards, and real-time transaction lifecycle tracking.
 
 ---
 
@@ -27,13 +27,13 @@
 
 ---
 
-## 💡 Why StellarPredict? (The Problem & Solution)
+## 💡 Why ChronoCast? (The Problem & Solution)
 
 ### The Problem in Traditional Prediction Markets
-Centralized prediction platforms (Polymarket on Polygon/Ethereum) charge high transaction gas fees, require complex L2 bridges, and lack instant mobile-ready finality for micro-stakes.
+Centralized prediction platforms charge high transaction gas fees, require complex bridges, and lack instant mobile-ready finality for micro-stakes.
 
-### The StellarPredict Solution
-StellarPredict leverages **Soroban Protocol 22** on Stellar to deliver:
+### The ChronoCast Solution
+ChronoCast leverages **Soroban Protocol 22** on Stellar to deliver:
 * **Sub-Cent Micro-Stakes:** Stake as little as 0.1 XLM with fee costs under 0.00001 XLM (100 stroops).
 * **3-5 Second Finality:** Instant on-chain state updates for stakers entering the liquidity pool.
 * **Proportional Escrow Payouts:** Smart contract vault locks opposing pools and proportionally distributes 100% of the losing pool to winning stakers upon oracle resolution.
@@ -179,7 +179,7 @@ cargo build --target wasm32-unknown-unknown --release
 
 1. Push your repository to GitHub (`https://github.com/brindaban55/stellar_predict.git`).
 2. Log in to [netlify.com](https://netlify.com) and click **"Add New Site → Import from Git"**.
-3. Import your **`stellar_predict`** repository.
+3. Import your repository.
 4. Set **Base Directory** to `frontend` and **Publish Directory** to `dist`.
 5. Build Command: `npm run build`.
 6. Click **"Deploy"**.
@@ -204,6 +204,7 @@ cargo build --target wasm32-unknown-unknown --release
 
 | Version | Description |
 | :--- | :--- |
+| **v1.6** | Rebranded project to ChronoCast across UI, contract metadata, and documentation |
 | **v1.5** | Added 100% on-chain PredictionLeaderboard querying Soroban RPC with live sync button and real-time volume aggregation |
 | **v1.4** | Added OnboardingGuide (6-step) & TxStatusTracker for real-time lifecycle overlay |
 | **v1.3** | Added 3 wallet error types (Not Installed, Rejected, Insufficient Balance) with contextual guidance |
