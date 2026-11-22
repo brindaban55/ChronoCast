@@ -297,6 +297,26 @@ function MainApp() {
           onOpenGuide={() => setShowOnboarding(true)}
         />
 
+        {/* Live Temporal Ticker Banner */}
+        <div className="live-temporal-ticker">
+          <div className="ticker-item">
+            <span className="pulse-node"></span>
+            <span>STELLAR SOROBAN V27 PROTOCOL</span>
+          </div>
+          <div className="ticker-item" style={{ color: 'var(--accent-indigo)' }}>
+            <span>•</span>
+            <span>TIME-LOCKED PREDICTION POOLS: ACTIVE</span>
+          </div>
+          <div className="ticker-item" style={{ color: 'var(--accent-green)' }}>
+            <span>•</span>
+            <span>ORACLE ARBITRATION CONSENSUS: READY</span>
+          </div>
+          <div className="ticker-item" style={{ color: 'var(--accent-sky)' }}>
+            <span>•</span>
+            <span>SUB-SECOND FINALITY & 0% SLIPPAGE</span>
+          </div>
+        </div>
+
         {/* Tab Content Views */}
         <main style={{ display: 'flex', flexDirection: 'column', gap: '2rem' }}>
           {activeTab === 'dashboard' && (
