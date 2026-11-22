@@ -61,6 +61,38 @@ export default function WalletSection({ setActiveTab, stats }) {
           </p>
         </div>
 
+        {/* Quantum Chronometer Hero Graphic */}
+        <div className="quantum-chronometer-wrapper" style={{ position: 'relative', width: '130px', height: '130px', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+          <svg width="130" height="130" viewBox="0 0 160 160" fill="none" xmlns="http://www.w3.org/2000/svg" className="quantum-chronometer-svg">
+            <circle cx="80" cy="80" r="74" stroke="url(#quantum-grad-1)" strokeWidth="2" strokeDasharray="4 6" className="spin-slow" />
+            <circle cx="80" cy="80" r="62" stroke="url(#quantum-grad-2)" strokeWidth="3" strokeDasharray="18 12" className="spin-reverse" />
+            <circle cx="80" cy="80" r="48" fill="url(#quantum-radial)" className="pulse-glow" />
+            <circle cx="80" cy="80" r="32" stroke="#6366f1" strokeWidth="1.5" strokeOpacity="0.8" />
+            <path d="M80 44V80L104 94" stroke="#ffffff" strokeWidth="3.5" strokeLinecap="round" strokeLinejoin="round" />
+            <circle cx="80" cy="80" r="5" fill="#10b981" />
+            <circle cx="80" cy="36" r="3" fill="#6366f1" />
+            <circle cx="124" cy="80" r="3" fill="#10b981" />
+            <circle cx="80" cy="124" r="3" fill="#0ea5e9" />
+            <circle cx="36" cy="80" r="3" fill="#f43f5e" />
+            <defs>
+              <linearGradient id="quantum-grad-1" x1="0" y1="0" x2="160" y2="160" gradientUnits="userSpaceOnUse">
+                <stop stopColor="#6366f1" />
+                <stop offset="0.5" stopColor="#0ea5e9" />
+                <stop offset="1" stopColor="#10b981" />
+              </linearGradient>
+              <linearGradient id="quantum-grad-2" x1="160" y1="0" x2="0" y2="160" gradientUnits="userSpaceOnUse">
+                <stop stopColor="#10b981" />
+                <stop offset="0.5" stopColor="#f59e0b" />
+                <stop offset="1" stopColor="#6366f1" />
+              </linearGradient>
+              <radialGradient id="quantum-radial" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(80 80) rotate(90) scale(48)">
+                <stop stopColor="#6366f1" stopOpacity="0.25" />
+                <stop offset="1" stopColor="#6366f1" stopOpacity="0.02" />
+              </radialGradient>
+            </defs>
+          </svg>
+        </div>
+
         <div style={{ display: 'flex', flexDirection: 'column', gap: '0.85rem', minWidth: '220px' }}>
           <button
             className="btn-neu btn-neu-primary"
